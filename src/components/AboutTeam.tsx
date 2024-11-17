@@ -1,5 +1,6 @@
 import React from 'react';
 import { Youtube, Twitter, Linkedin } from 'lucide-react';
+import aboutMePic from './aboutme_pic.jpg';
 
 interface SocialLink {
   Icon: typeof Youtube | typeof Twitter | typeof Linkedin;
@@ -32,7 +33,7 @@ function AboutTeam() {
         <div className="flex flex-col items-center">
           <div className="about-image mb-6">
             <img 
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800&h=600" 
+              src={aboutMePic}
               alt="Team Leader" 
               className="rounded-2xl shadow-2xl w-full h-[350px] object-cover transform hover:scale-105 transition-transform duration-500"
             />
