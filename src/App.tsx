@@ -46,7 +46,7 @@ function App() {
         <div className={`${navVisible ? '' : 'nav-hidden'}`}>
           <Navbar />
         </div>
-        <main className={`main-content pt-32 ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+        <main className={`main-content pt-40 ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           <section className="hero-section relative pb-20 px-4">
             <div className="max-w-5xl mx-auto text-center">
               <div className="inline-block px-4 py-2 bg-brand-gray/30 rounded-full mb-6">
