@@ -59,7 +59,7 @@ function App() {
                 Transform your real estate practice with AI-powered automation. Generate qualified leads, 
                 nurture relationships, and analyze market trends—all while focusing on closing deals.
               </p>
-              <a href="https://form.typeform.com/to/xxxxx" 
+              <a href="https://fg8dqkk77s6.typeform.com/to/wZt1tyaZ" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="btn-primary inline-flex items-center space-x-2">
@@ -104,7 +104,7 @@ function App() {
                 Let's grow your real estate business together.
               </p>
               <a
-                href="https://form.typeform.com/to/xxxxx"
+                href="https://fg8dqkk77s6.typeform.com/to/wZt1tyaZ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button inline-flex items-center justify-center space-x-3 text-lg md:text-xl px-8 md:px-10 py-4 md:py-5 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-glow-xl hover:shadow-glow-xl-hover w-full sm:w-auto"
