@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Target, Workflow, Rocket, ArrowRight } from 'lucide-react';
+import { Home, MessageSquare, TrendingUp, ArrowRight } from 'lucide-react';
 import Navbar from './components/Navbar';
 import IntroAnimation from './components/IntroAnimation';
 import FeatureCard from './components/FeatureCard';
@@ -23,19 +23,19 @@ function App() {
 
   const features = [
     {
-      Icon: Target,
-      title: "AI-Powered Lead Generation",
-      description: "Smart AI algorithms to identify and engage high-value prospects."
+      Icon: Home,
+      title: "Smart Lead Generation",
+      description: "AI-powered systems that identify and engage high-potential property buyers and sellers in your area."
     },
     {
-      Icon: Workflow,
-      title: "Workflow Automation",
-      description: "Streamline your business processes with intelligent solutions."
+      Icon: MessageSquare,
+      title: "Automated Follow-ups",
+      description: "Personalized email campaigns and SMS sequences that nurture leads and keep clients engaged."
     },
     {
-      Icon: Rocket,
-      title: "Client Management Systems",
-      description: "Build lasting relationships with automated engagement."
+      Icon: TrendingUp,
+      title: "Market Analysis",
+      description: "AI-driven market insights and property valuations to help you make data-backed decisions."
     }
   ];
 
@@ -47,17 +47,17 @@ function App() {
           <Navbar />
         </div>
         <main className={`main-content pt-32 ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <section className="hero-section pb-20 px-4">
+          <section className="hero-section relative pb-20 px-4">
             <div className="max-w-5xl mx-auto text-center">
               <div className="inline-block px-4 py-2 bg-brand-gray/30 rounded-full mb-6">
-                <span className="text-brand-primary font-semibold">AUTOMATE YOUR BUSINESS</span>
+                <span className="text-brand-primary font-semibold">AUTOMATE YOUR REAL ESTATE BUSINESS</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white">
-                We build <span className="gradient-text">hands-off growth</span> systems for ambitious businesses
+                Build a <span className="gradient-text">24/7 growth system</span> for your real estate business
               </h1>
               <p className="text-xl md:text-2xl text-brand-light max-w-3xl mx-auto mb-12">
-                Transform your business operations with AI-powered automation. Scale your lead acquisition, 
-                streamline customer management, and optimize marketing workflows—all while focusing on what truly matters.
+                Transform your real estate practice with AI-powered automation. Generate qualified leads, 
+                nurture relationships, and analyze market trends—all while focusing on closing deals.
               </p>
               <a href="https://form.typeform.com/to/xxxxx" 
                  target="_blank" 
@@ -96,12 +96,12 @@ function App() {
           <section className="cta-section py-20 px-4 bg-gradient-to-b from-brand-dark to-brand-gray/20">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Get started today with a<br className="hidden sm:block" />
-                30min intro call
+                Start automating your<br className="hidden sm:block" />
+                real estate business today
               </h2>
               <p className="text-lg md:text-xl text-brand-light mb-10 max-w-2xl mx-auto">
-                A no-strings-attached meet and greet + consultation with our team 👋<br className="hidden sm:block" />
-                Book your call now.
+                Book a free strategy call to see how we can help you generate more leads and close more deals with automation 🏠<br className="hidden sm:block" />
+                Let's grow your real estate business together.
               </p>
               <a
                 href="https://form.typeform.com/to/xxxxx"
@@ -109,7 +109,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="cta-button inline-flex items-center justify-center space-x-3 text-lg md:text-xl px-8 md:px-10 py-4 md:py-5 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-glow-xl hover:shadow-glow-xl-hover w-full sm:w-auto"
               >
-                <span>Book intro call</span>
+                <span>Book Strategy Call</span>
                 <ArrowRight className="w-6 h-6" />
               </a>
               <p className="mt-4 text-brand-light text-base">No credit card required.</p>

@@ -21,13 +21,13 @@ function AboutTeam() {
         <div className="about-content">
           <h2 className="text-4xl font-bold mb-8 text-white">Meet the Team</h2>
           <p className="text-xl text-brand-light leading-relaxed mb-8">
-            As the founder of KaizenFlow, I bring over a decade of experience in business automation 
-            and AI integration. My mission is to help businesses achieve sustainable growth through 
-            intelligent automation solutions that actually work.
+            Hey! I'm Brandon, the founder of KaizenFlow. I graduated from MIT (ranked as the #1 technology school by US News & World Report).
+            I worked at an AI startup that has reached $4 billion in valuation as well as other big tech companies like Google and DoorDash. 
           </p>
           <p className="text-xl text-brand-light leading-relaxed">
-            With a background in both technology and business strategy, I understand the unique 
-            challenges that growing businesses face and how to overcome them through smart automation.
+            With a deep understanding of both real estate and technology, I know exactly what it takes 
+            to generate consistent leads and nurture client relationships through automation, allowing 
+            you to focus on what you do best—closing deals.
           </p>
         </div>
         <div className="flex flex-col items-center">

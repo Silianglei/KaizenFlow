@@ -36,6 +36,30 @@
     @apply text-xl font-bold text-white;
   }
 
+  /* House Background Pattern */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M150 50L250 200H50L150 50z' fill='%2386C232' fill-opacity='0.08'/%3E%3Cpath d='M350 100L450 250H250L350 100z' transform='translate(-100, 50)' fill='%2386C232' fill-opacity='0.06'/%3E%3Cpath d='M250 150L330 270H170L250 150z' transform='translate(-50, -20)' fill='%2386C232' fill-opacity='0.07'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    opacity: 0.6;
+    z-index: -1;
+    animation: subtleFloat 60s linear infinite;
+  }
+
+  @keyframes subtleFloat {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 400px 400px;
+    }
+  }
+
   /* Enhanced Intro Animation */
   .intro-animation {
     @apply fixed inset-0 z-50 bg-brand-dark flex items-center justify-center;

@@ -11,18 +11,18 @@ function Timeline() {
   const steps: TimelineStep[] = [
     {
       Icon: PhoneCall,
-      title: "Discovery Call",
-      description: "We discuss your business goals and identify automation opportunities"
+      title: "Strategy Call",
+      description: "We analyze your real estate business and identify automation opportunities"
     },
     {
       Icon: Lightbulb,
-      title: "Strategy Session",
-      description: "Our team develops a tailored automation roadmap"
+      title: "Custom Roadmap",
+      description: "We design your personalized real estate automation system"
     },
     {
       Icon: Cog,
       title: "Implementation",
-      description: "We build and deploy your custom automation solutions"
+      description: "We build and launch your automated lead generation and follow-up systems"
     }
   ];
 
