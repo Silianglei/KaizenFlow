@@ -96,7 +96,7 @@ function App() {
           <section className="cta-section py-20 px-4 bg-gradient-to-b from-brand-dark to-brand-gray/20">
             <div className="max-w-5xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                Start automating your<br className="hidden sm:block" />
+                Start automating your <br className="hidden sm:block" />
                 real estate business today
               </h2>
               <p className="text-lg md:text-xl text-brand-light mb-10 max-w-2xl mx-auto">
