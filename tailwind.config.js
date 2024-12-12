@@ -15,6 +15,12 @@ export default {
           light: '#6B6E70',      // light gray
         }
       },
+      boxShadow: {
+        'glow': '0 0 20px rgba(134, 194, 50, 0.3)',
+        'glow-hover': '0 0 30px rgba(134, 194, 50, 0.4)',
+        'glow-xl': '0 0 30px rgba(134, 194, 50, 0.3)',
+        'glow-xl-hover': '0 0 40px rgba(134, 194, 50, 0.5)',
+      },
       backgroundImage: {
         'solutions-pattern': `radial-gradient(circle at 50% 50%, rgba(134, 194, 50, 0.1) 0%, rgba(34, 38, 41, 0) 50%),
                             linear-gradient(rgba(34, 38, 41, 0.97), rgba(34, 38, 41, 0.97))`,

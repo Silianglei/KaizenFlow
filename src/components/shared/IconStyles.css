@@ -1,0 +1,42 @@
+/* Icon Container Styles */
+.icon-container {
+  @apply w-20 h-20 rounded-full bg-brand-dark border-2 border-brand-primary 
+         flex items-center justify-center transition-all duration-300
+         hover:bg-brand-primary hover:shadow-glow-hover;
+}
+
+.icon-container:hover svg {
+  @apply text-brand-dark scale-110;
+}
+
+/* Timeline Icon Styles */
+.timeline-container {
+  @apply relative py-16;
+}
+
+.timeline-step {
+  @apply text-center flex flex-col items-center;
+}
+
+.timeline-icon {
+  @apply w-20 h-20 rounded-full bg-brand-dark border-2 border-brand-primary 
+         flex items-center justify-center transition-all duration-300
+         hover:bg-brand-primary hover:shadow-glow-hover;
+}
+
+.timeline-icon:hover svg {
+  @apply text-brand-dark scale-110;
+}
+
+.arrow-container {
+  @apply relative flex items-center h-4;
+}
+
+.arrow-line {
+  @apply w-24 h-1 bg-brand-primary relative;
+}
+
+.arrow-head {
+  @apply absolute right-0 w-3 h-3 border-t-2 border-r-2 border-brand-primary 
+         transform rotate-45 -translate-y-1/2 translate-x-1;
+}
