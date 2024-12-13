@@ -1,6 +1,7 @@
 import React from 'react';
 import { Youtube, Twitter, Linkedin } from 'lucide-react';
-import aboutMePic from './aboutme_pic.jpg';
+import aboutMeImage from './aboutme_pic.jpg';
+
 
 interface SocialLink {
   Icon: typeof Youtube | typeof Twitter | typeof Linkedin;
@@ -22,19 +23,16 @@ function AboutTeam() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="about-content">
             <p className="text-xl text-brand-light leading-relaxed mb-8">
-            Hey! I'm Brandon, the founder of KaizenFlow. I graduated from MIT (ranked as the #1 technology school by US News & World Report).
-            I worked at an AI startup that has reached $4 billion in valuation as well as other big tech companies like Google and DoorDash. 
+            Hey! I'm Brandon, the founder of KaizenFlow. I graduated from MIT (ranked as the #1 technology school by US News & World Report). I worked at an AI startup that has reached $4 billion in valuation as well as other big tech companies like Google and DoorDash.
             </p>
             <p className="text-xl text-brand-light leading-relaxed">
-              With deep understanding of both business operations and technology, I know exactly what it takes 
-              to create reliable automated support systems that handle customer inquiries professionally 
-              while reducing operational costs.
+            With deep understanding of both business operations and technology, I know exactly what it takes to create reliable automated support systems that handle customer inquiries professionally while reducing operational costs.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <div className="about-image mb-6">
               <img 
-                src={aboutMePic}
+                src={aboutMeImage} 
                 alt="Team Leader" 
                 className="rounded-2xl shadow-2xl w-full h-[350px] object-cover transform hover:scale-105 transition-transform duration-500"
               />

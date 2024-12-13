@@ -11,5 +11,36 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '675b4b3edb9909bd11db5779' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              // Enable session persistence
+              persist: true,
+              // Prevent auto session ending
+              endSession: false,
+              // Configure launch behavior
+              launch: {
+                autoOpen: false,
+                autoEnd: false
+              },
+              // Add user preferences
+              user: {
+                name: 'Visitor'
+              },
+              // Configure session behavior
+              session: {
+                persist: true,
+                resume: true
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
   </body>
 </html>
