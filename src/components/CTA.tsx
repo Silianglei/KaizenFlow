@@ -14,7 +14,7 @@ function CTA() {
           Let's discuss your needs and explore the perfect AI solution for your properties.
         </p>
         <a
-          href="https://form.typeform.com/to/xxxxx"
+          href="https://fg8dqkk77s6.typeform.com/kaizenflow"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button inline-flex items-center justify-center space-x-3 text-lg md:text-xl px-8 md:px-10 py-4 md:py-5 font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-glow-xl hover:shadow-glow-xl-hover w-full sm:w-auto"

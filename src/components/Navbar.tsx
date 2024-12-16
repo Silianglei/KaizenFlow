@@ -24,7 +24,7 @@ function Navbar() {
             <button onClick={() => scrollToSection('about')} className="nav-link">About the Team</button>
           </div>
           <a 
-            href="https://form.typeform.com/to/xxxxx"
+            href="https://fg8dqkk77s6.typeform.com/kaizenflow"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center space-x-2"
