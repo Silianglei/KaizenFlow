@@ -1,30 +1,28 @@
-import { useEffect, useCallback } from 'react';
-import { sendProactiveMessage, sendProactiveMessages } from '../utils/chat/proactive';
-import { WELCOME_MESSAGES } from '../utils/chat/messages';
-import { ProactiveMessage } from '../utils/chat/types';
+import { useEffect, useRef } from 'react';
+import { WELCOME_MESSAGES } from '../services/voiceflow/messages';
+import { voiceflowService } from '../services/voiceflow/VoiceflowService';
 
 export function useProactiveChat() {
-  // Send welcome messages after a delay
+  const hasShownMessages = useRef(false);
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      sendProactiveMessages(WELCOME_MESSAGES);
-    }, 3000);
+    if (hasShownMessages.current) return;
 
-    return () => clearTimeout(timer);
+    const initializeChat = async () => {
+      try {
+        await voiceflowService.initialize();
+        
+        if (!hasShownMessages.current) {
+          setTimeout(() => {
+            voiceflowService.showWelcomeMessages(WELCOME_MESSAGES);
+            hasShownMessages.current = true;
+          }, 2000);
+        }
+      } catch (error) {
+        console.error('Failed to initialize proactive chat:', error);
+      }
+    };
+
+    initializeChat();
   }, []);
-
-  // Utility function to send custom proactive messages
-  const sendCustomMessage = useCallback((message: ProactiveMessage) => {
-    sendProactiveMessage(message);
-  }, []);
-
-  // Utility function to send multiple custom proactive messages
-  const sendCustomMessages = useCallback((messages: ProactiveMessage[]) => {
-    sendProactiveMessages(messages);
-  }, []);
-
-  return {
-    sendCustomMessage,
-    sendCustomMessages
-  };
 }

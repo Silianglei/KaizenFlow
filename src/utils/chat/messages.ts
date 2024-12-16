@@ -10,7 +10,7 @@ export const WELCOME_MESSAGES: ProactiveMessage[] = [
   {
     type: 'text',
     payload: { 
-      message: 'I can help you learn about our AI voice & chat solutions for property management.' 
+      message: 'I can help you learn about our AI solutions for property management.' 
     }
   },
   {

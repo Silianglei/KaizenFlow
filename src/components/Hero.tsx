@@ -16,8 +16,8 @@ function Hero() {
           Our AI solutions help property managers reduce workload while improving tenant satisfaction.
         </p>
         <a 
-          href="https://form.typeform.com/to/xxxxx" 
-          target="_blank" 
+          href="https://form.typeform.com/to/xxxxx"
+          target="_blank"
           rel="noopener noreferrer"
           className="btn-primary inline-flex items-center space-x-2"
         >

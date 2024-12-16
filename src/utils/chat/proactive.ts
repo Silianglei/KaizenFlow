@@ -15,11 +15,12 @@ export function sendProactiveMessages(messages: ProactiveMessage[]): void {
   }
 }
 
+// Send a welcome message when chat opens
 export function sendWelcomeMessage(): void {
   sendProactiveMessage({
     type: 'text',
     payload: { 
-      message: '👋 Hi there! Need help exploring our AI automation solutions?' 
+      message: '👋 Hi there! Need help exploring our AI solutions for property management?' 
     }
   });
 }

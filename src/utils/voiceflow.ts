@@ -7,11 +7,10 @@ export function generateSessionId(): string {
 }
 
 export async function startVoiceflowInteraction(sessionId: string) {
-  const response = await fetch(`${VOICEFLOW_CONFIG.baseURL}/state/user/${sessionId}/interact`, {
+  const response = await fetch(`${VOICEFLOW_CONFIG.url}/state/user/${sessionId}/interact`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': VOICEFLOW_CONFIG.apiKey,
       'versionID': VOICEFLOW_CONFIG.versionID,
     },
     body: JSON.stringify({
@@ -42,11 +41,10 @@ export async function sendMessageToVoiceflow(
         }
       };
   
-  const response = await fetch(`${VOICEFLOW_CONFIG.baseURL}/state/user/${sessionId}/interact`, {
+  const response = await fetch(`${VOICEFLOW_CONFIG.url}/state/user/${sessionId}/interact`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': VOICEFLOW_CONFIG.apiKey,
       'versionID': VOICEFLOW_CONFIG.versionID,
     },
     body: JSON.stringify(body),

@@ -23,8 +23,12 @@ function Navbar() {
             <button onClick={() => scrollToSection('how-it-works')} className="nav-link">How It Works</button>
             <button onClick={() => scrollToSection('about')} className="nav-link">About the Team</button>
           </div>
-          <a href="https://form.typeform.com/to/xxxxx" target="_blank" rel="noopener noreferrer" 
-             className="btn-primary flex items-center space-x-2">
+          <a 
+            href="https://form.typeform.com/to/xxxxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary flex items-center space-x-2"
+          >
             <span>Book Free Consultation</span>
             <ArrowRight className="w-4 h-4" />
           </a>
