@@ -25,7 +25,7 @@ function Navbar() {
           </div>
           <a href="https://form.typeform.com/to/xxxxx" target="_blank" rel="noopener noreferrer" 
              className="btn-primary flex items-center space-x-2">
-            <span>Book intro call</span>
+            <span>Book Free Consultation</span>
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

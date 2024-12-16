@@ -25,3 +25,13 @@ export const VOICEFLOW_CONFIG = {
     resume: true
   }
 } as const;
+
+// Base URL for API calls
+export const VOICEFLOW_BASE_URL = 'https://general-runtime.voiceflow.com';
+
+// API configuration
+export const VOICEFLOW_API_CONFIG = {
+  baseURL: VOICEFLOW_BASE_URL,
+  apiKey: process.env.VITE_VOICEFLOW_API_KEY || '',
+  versionID: 'production'
+} as const;

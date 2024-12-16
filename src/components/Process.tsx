@@ -1,22 +1,22 @@
 import React from 'react';
-import { MessageSquare, Settings, Zap } from 'lucide-react';
+import { ClipboardCheck, Settings, Zap } from 'lucide-react';
 import Timeline from './Timeline';
 
 const steps = [
   {
-    Icon: MessageSquare,
-    title: "Consultation",
-    description: "We analyze your support needs and design a custom automation plan"
+    Icon: ClipboardCheck,
+    title: "Assessment",
+    description: "We analyze your property management needs and design a custom automation solution"
   },
   {
     Icon: Settings,
-    title: "Development",
-    description: "We build your custom chat and phone support systems with your business knowledge"
+    title: "Implementation",
+    description: "We build your AI assistant with property-specific knowledge and integrate with your systems"
   },
   {
     Icon: Zap,
-    title: "Integration",
-    description: "We connect everything with your existing business tools and systems"
+    title: "Activation",
+    description: "Your AI assistant goes live, providing immediate support to tenants and staff"
   }
 ];
 

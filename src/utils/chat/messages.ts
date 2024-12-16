@@ -10,7 +10,7 @@ export const WELCOME_MESSAGES: ProactiveMessage[] = [
   {
     type: 'text',
     payload: { 
-      message: 'I can help you learn more about our AI automation solutions.' 
+      message: 'I can help you learn about our AI voice & chat solutions for property management.' 
     }
   },
   {
@@ -18,9 +18,9 @@ export const WELCOME_MESSAGES: ProactiveMessage[] = [
     payload: {
       message: 'What would you like to know more about?',
       buttons: [
+        { name: 'Voice Assistant Features', request: 'Tell me about voice support' },
         { name: 'Chat Support Features', request: 'Tell me about chat support' },
-        { name: 'Pricing Plans', request: 'What are your pricing plans?' },
-        { name: 'Book Demo', request: 'I want to book a demo' }
+        { name: 'Book Consultation', request: 'I want to book a consultation' }
       ]
     }
   }

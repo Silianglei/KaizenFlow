@@ -66,6 +66,21 @@
     @apply text-brand-primary font-semibold text-lg whitespace-nowrap ml-2;
   }
 
+  /* Icon container styles */
+  .icon-container-sm {
+    @apply w-14 h-14 rounded-xl bg-brand-dark/50 border border-brand-primary/30 
+           flex items-center justify-center transition-all duration-300
+           group-hover:bg-brand-primary/10 group-hover:border-brand-primary/50;
+  }
+
+  .icon-container-sm svg {
+    @apply transition-all duration-300;
+  }
+
+  .feature-card {
+    @apply transform transition-all duration-300 hover:-translate-y-1;
+  }
+
   /* House Background Pattern */
   .hero-section::before {
     content: '';
@@ -79,6 +94,13 @@
     opacity: 0.6;
     z-index: -1;
     animation: subtleFloat 60s linear infinite;
+  }
+
+  /* Solutions Section Pattern */
+  .solutions-section {
+    @apply relative;
+    background: radial-gradient(circle at 50% 0%, rgba(134, 194, 50, 0.15) 0%, transparent 70%),
+                linear-gradient(180deg, rgba(34, 38, 41, 0.97) 0%, rgba(34, 38, 41, 0.95) 100%);
   }
 
   @keyframes subtleFloat {

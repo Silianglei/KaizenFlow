@@ -6,12 +6,12 @@ function CTA() {
     <section className="cta-section py-20 px-4 bg-gradient-to-b from-brand-dark to-brand-gray/20">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-          Transform your customer<br className="hidden sm:block" />
-          support experience today
+          Elevate your property<br className="hidden sm:block" />
+          management with AI
         </h2>
         <p className="text-lg md:text-xl text-brand-light mb-10 max-w-2xl mx-auto">
-          Book a free consultation to see how we can help you automate your customer support with AI 🤖<br className="hidden sm:block" />
-          Let's build your 24/7 support team together.
+          Book a free consultation to see how we can help automate your property management operations<br className="hidden sm:block" />
+          Let's discuss your needs and explore the perfect AI solution for your properties.
         </p>
         <a
           href="https://form.typeform.com/to/xxxxx"
@@ -22,7 +22,7 @@ function CTA() {
           <span>Book Free Consultation</span>
           <ArrowRight className="w-6 h-6" />
         </a>
-        <p className="mt-4 text-brand-light text-base">No credit card required.</p>
+        <p className="mt-4 text-brand-light text-base">No commitment required - let's explore how AI can transform your property management.</p>
       </div>
     </section>
   );

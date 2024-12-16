@@ -9,7 +9,11 @@ if (!rootElement) {
   throw new Error('Failed to find the root element');
 }
 
-createRoot(rootElement).render(
+// Create root once
+const root = createRoot(rootElement);
+
+// Render the app
+root.render(
   <StrictMode>
     <App />
   </StrictMode>
