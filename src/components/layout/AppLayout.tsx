@@ -6,6 +6,7 @@ import Features from '../Features';
 import Process from '../Process';
 import AboutTeam from '../AboutTeam';
 import CTA from '../CTA';
+import { Footer } from '../Footer';
 
 interface AppLayoutProps {
   mounted: boolean;
@@ -13,9 +14,20 @@ interface AppLayoutProps {
   contentVisible: boolean;
 }
 
-export function AppLayout({ mounted, navVisible, contentVisible }: AppLayoutProps) {
+export const AppLayout: React.FC<AppLayoutProps> = ({
+  mounted,
+  navVisible,
+  contentVisible
+}) => {
+  const handleScrollTo = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <>
+    <div className={`min-h-screen ${mounted ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
       {mounted && <IntroAnimation />}
       <div className="min-h-screen bg-brand-dark">
         <div className={`${navVisible ? '' : 'nav-hidden'}`}>
@@ -29,6 +41,7 @@ export function AppLayout({ mounted, navVisible, contentVisible }: AppLayoutProp
           <CTA />
         </main>
       </div>
-    </>
+      <Footer onScrollTo={handleScrollTo} />
+    </div>
   );
-}
+};
