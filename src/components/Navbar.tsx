@@ -1,7 +1,12 @@
 import React from 'react';
-import { ArrowRight, CircuitBoard } from 'lucide-react';
+import { ArrowRight, CircuitBoard, Menu } from 'lucide-react';
 
-function Navbar() {
+interface NavbarProps {
+  visible: boolean;
+  isMobile: boolean;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ visible, isMobile }) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,24 +23,30 @@ function Navbar() {
             <CircuitBoard className="logo-icon group-hover:rotate-180" />
             <span className="logo-text">KaizenFlow</span>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          
+          <div className="hidden lg:flex items-center space-x-8">
             <button onClick={() => scrollToSection('solutions')} className="nav-link">Solutions</button>
             <button onClick={() => scrollToSection('how-it-works')} className="nav-link">How It Works</button>
             <button onClick={() => scrollToSection('about')} className="nav-link">About the Team</button>
           </div>
-          <a 
-            href="https://fg8dqkk77s6.typeform.com/kaizenflow"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary flex items-center space-x-2"
-          >
-            <span>Book Free Consultation</span>
-            <ArrowRight className="w-4 h-4" />
-          </a>
+
+          {!isMobile && (
+            <a 
+              href="https://fg8dqkk77s6.typeform.com/kaizenflow"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:flex btn-primary items-center space-x-2"
+            >
+              <span>Book Free Consultation</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          )}
+
+          <button className="lg:hidden text-brand-light hover:text-brand-primary">
+            <Menu className="w-6 h-6" />
+          </button>
         </div>
       </div>
     </nav>
   );
-}
-
-export default Navbar;
+};

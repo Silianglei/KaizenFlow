@@ -192,4 +192,23 @@
       @apply h-full;
     }
   }
+
+  /* Add these mobile-friendly styles */
+  @media (max-width: 768px) {
+    nav {
+      padding: 0.5rem 1rem; /* Smaller padding on mobile */
+    }
+    
+    /* Adjust any other mobile-specific styles as needed */
+  }
+
+  @media (max-width: 1023px) {
+    .floating-navbar {
+      @apply px-2;
+    }
+
+    .logo-text {
+      @apply text-lg; /* Slightly smaller logo text on mobile */
+    }
+  }
 }
