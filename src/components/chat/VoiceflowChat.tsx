@@ -1,10 +1,37 @@
-import React from 'react';
-import { useVoiceflowChat } from '../../hooks/useVoiceflowChat';
-import { LoadingMessage } from '../shared/LoadingMessage';
+import React, { useEffect } from 'react';
 
-function VoiceflowChat() {
-  const { isLoading } = useVoiceflowChat();
-  return isLoading ? <LoadingMessage message="Initializing chat support..." /> : null;
+declare global {
+  interface Window {
+    voiceflow: {
+      chat: {
+        load: (config: {
+          verify: { projectID: string };
+          url: string;
+          versionID: string;
+        }) => void;
+      };
+    };
+  }
 }
 
-export default VoiceflowChat;
+export default function VoiceflowChat() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+    script.onload = () => {
+      window.voiceflow.chat.load({
+        verify: { projectID: '675b4b3edb9909bd11db5779' },
+        url: 'https://general-runtime.voiceflow.com',
+        versionID: 'production'
+      });
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return null;
+}

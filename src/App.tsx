@@ -1,24 +1,27 @@
-import React from 'react';
-import { useAppState } from './hooks/useAppState';
-import { useVoiceflowChat } from './hooks/useVoiceflowChat';
-import { useScreenSize } from './hooks/useScreenSize';
-import { AppLayout } from './components/layout/AppLayout';
+import React, { useState } from 'react';
+import OpeningAnimation from './components/OpeningAnimation/OpeningAnimation';
+import PageContent from './components/PageContent';
+import Privacy from './components/Privacy/Privacy';
+import Terms from './components/Terms/Terms';
 
-function App() {
-  const { mounted, navVisible, contentVisible } = useAppState();
-  const { isMobile } = useScreenSize();
-  
-  // Initialize Voiceflow chat with welcome messages
-  useVoiceflowChat();
+export default function App() {
+  const [showAnimation, setShowAnimation] = useState(true);
+  const path = window.location.pathname;
+  const isPrivacyPage = path === '/privacy';
+  const isTermsPage = path === '/terms';
 
   return (
-    <AppLayout 
-      mounted={mounted}
-      navVisible={navVisible}
-      contentVisible={contentVisible}
-      isMobile={isMobile}
-    />
+    <>
+      {showAnimation && !isPrivacyPage && !isTermsPage && (
+        <OpeningAnimation onComplete={() => setShowAnimation(false)} />
+      )}
+      {isPrivacyPage ? (
+        <Privacy />
+      ) : isTermsPage ? (
+        <Terms />
+      ) : (
+        <PageContent isVisible={!showAnimation} />
+      )}
+    </>
   );
 }
-
-export default App;

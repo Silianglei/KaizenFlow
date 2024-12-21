@@ -1,25 +1,44 @@
-import { MessageSquare, Phone, Wrench, Home } from 'lucide-react';
-import { Feature } from './types';
+import { Clock, Shield, Workflow, Phone, Globe, Lock, Settings, Zap } from 'lucide-react';
 
-export const features: Feature[] = [
+export const features = [
   {
-    Icon: MessageSquare,
-    title: "AI Chat Support",
-    description: "Smart chatbots handle rent inquiries, maintenance requests, and general questions, providing instant text-based assistance to your tenants 24/7."
+    icon: Clock,
+    title: "24/7 Availability",
+    description: "Our AI never sleeps, ensuring your business is always available to handle customer calls."
   },
   {
-    Icon: Phone,
-    title: "Voice Assistant",
-    description: "AI-powered voice agents handle phone calls for maintenance requests, rent payments, and leasing inquiries, providing natural conversations any time."
+    icon: Shield,
+    title: "99% Success Rate",
+    description: "Guaranteed call resolution success rate or get your money back."
   },
   {
-    Icon: Wrench,
-    title: "Maintenance Automation",
-    description: "Streamline maintenance workflows through both voice and chat channels, with automated request logging and status updates."
+    icon: Workflow,
+    title: "CRM Integration",
+    description: "Seamlessly connects with your existing CRM and workflow systems."
   },
   {
-    Icon: Home,
-    title: "Smart Leasing",
-    description: "Help prospective tenants via chat or voice calls to explore units, schedule viewings, and get instant property information."
+    icon: Settings,
+    title: "Unlimited Customization",
+    description: "Fully customizable phone system tailored to your business needs."
+  },
+  {
+    icon: Globe,
+    title: "Multilingual Support",
+    description: "AI-powered communication in multiple languages to serve diverse customers."
+  },
+  {
+    icon: Phone,
+    title: "Free Phone Number",
+    description: "Get a custom area code phone number at no additional cost."
+  },
+  {
+    icon: Lock,
+    title: "HIPAA Compliant",
+    description: "Fully compliant with healthcare privacy regulations and security standards."
+  },
+  {
+    icon: Zap,
+    title: "Quick Setup",
+    description: "Complete system setup and deployment within one week."
   }
 ];

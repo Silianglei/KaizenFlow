@@ -1,22 +1,18 @@
 import React from 'react';
-import { Feature } from './types';
+import { LucideIcon } from 'lucide-react';
 
-function FeatureCard({ Icon, title, description }: Feature) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+export default function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="feature-card group">
-      <div className="bg-brand-gray/50 backdrop-blur-sm border border-brand-primary/20 rounded-xl p-8 h-full flex flex-col transition-all duration-300 hover:border-brand-primary/40 hover:shadow-glow">
-        <div className="flex items-start space-x-6">
-          <div className="icon-container-sm flex-shrink-0">
-            <Icon className="w-8 h-8 text-brand-primary transform transition-all duration-300 group-hover:scale-110" />
-          </div>
-          <div className="flex-1 text-left">
-            <h3 className="text-2xl font-bold mb-3 text-white">{title}</h3>
-            <p className="text-gray-300 text-lg leading-relaxed">{description}</p>
-          </div>
-        </div>
-      </div>
+    <div className="bg-black/20 p-8 rounded-xl hover:bg-black/30 transition-colors backdrop-blur-sm">
+      <div className="mb-4">{icon}</div>
+      <h3 className="text-xl font-medium text-white mb-2">{title}</h3>
+      <p className="text-gray-300">{description}</p>
     </div>
   );
 }
-
-export default FeatureCard;
