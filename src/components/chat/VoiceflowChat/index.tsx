@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { VOICEFLOW_CONFIG } from './config';
-import type { VoiceflowConfig } from './types';
 
 export default function VoiceflowChat() {
   useEffect(() => {
