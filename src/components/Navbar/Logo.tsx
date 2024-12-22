@@ -11,7 +11,7 @@ export default function Logo() {
         <CircuitBoard className="h-8 w-8 text-brand-primary" />
       </div>
       <div className="ml-2 text-xl font-bold text-white group-hover:text-brand-primary transition-colors">
-        KaizenFlow
+        Kaizen Flow
       </div>
     </a>
   );

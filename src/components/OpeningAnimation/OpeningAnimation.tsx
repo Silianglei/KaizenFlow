@@ -12,7 +12,7 @@ export default function OpeningAnimation({ onComplete }: OpeningAnimationProps) 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimating(false);
-      onComplete(); // Remove the extra timeout, trigger immediately
+      onComplete();
     }, TIMING.LOGO_SPIN);
 
     return () => clearTimeout(timer);
@@ -32,7 +32,7 @@ export default function OpeningAnimation({ onComplete }: OpeningAnimationProps) 
           style={{ animationDuration: `${TIMING.LOGO_SPIN}ms` }}
         />
         <div className="text-4xl font-bold text-white">
-          KaizenFlow
+          Kaizen Flow
         </div>
       </div>
     </div>

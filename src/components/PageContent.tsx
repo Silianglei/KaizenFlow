@@ -6,6 +6,7 @@ import Onboarding from './Onboarding/Onboarding';
 import Team from './Team/Team';
 import CTA from './CTA/CTA';
 import Footer from './Footer/Footer';
+import VoiceflowChat from './Chat/VoiceflowChat/VoiceflowChat';
 import { TIMING, EASING } from '../utils/animationUtils';
 
 interface PageContentProps {
@@ -43,6 +44,7 @@ export default function PageContent({ isVisible }: PageContentProps) {
         <Team />
         <CTA />
         <Footer />
+        <VoiceflowChat />
       </div>
     </div>
   );
