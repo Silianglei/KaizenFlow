@@ -2,7 +2,6 @@ import React from 'react';
 import FounderBio from './FounderBio';
 import FounderAchievements from './FounderAchievements';
 import profileImage from '../../aboutme_pic.jpg';
-
 export default function TeamFounder() {
   return (
     <div className="max-w-5xl mx-auto">

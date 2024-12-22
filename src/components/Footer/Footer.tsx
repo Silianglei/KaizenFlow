@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterNewsletter from './FooterNewsletter';
+import FooterNewsletter from './FooterNewsletter/FooterNewsletter';
 import FooterLinks from './FooterLinks';
 import FooterSocial from './FooterSocial';
 import FooterCopyright from './FooterCopyright';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
-import { founderSocial } from './founderData';
+import { founderSocial } from '../../data/socialLinks';
 
 export default function FounderBio() {
   return (

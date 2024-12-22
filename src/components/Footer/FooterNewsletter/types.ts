@@ -1,0 +1,1 @@
+export type SubscriptionStatus = 'idle' | 'loading' | 'success' | 'error';

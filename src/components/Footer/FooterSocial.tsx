@@ -1,20 +1,8 @@
 import React from 'react';
 import { Linkedin, Mail } from 'lucide-react';
+import { socialLinks } from '../../data/socialLinks';
 
 export default function FooterSocial() {
-  const socialLinks = [
-    { 
-      icon: Linkedin, 
-      href: 'https://linkedin.com/in/brandon-kaizenflow',
-      label: 'LinkedIn'
-    },
-    { 
-      icon: Mail, 
-      href: 'mailto:brandon@gokaizenflow.com',
-      label: 'Email'
-    }
-  ];
-
   return (
     <div className="flex gap-4">
       {socialLinks.map((link, index) => {
