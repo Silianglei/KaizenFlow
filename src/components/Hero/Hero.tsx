@@ -3,6 +3,7 @@ import HeroHeadline from './HeroHeadline';
 import HeroButtons from './HeroButtons';
 import HeroBenefits from './HeroBenefits';
 import HeroBackground from './HeroBackground';
+import TrustedBy from './TrustedBy/TrustedBy';
 
 export default function Hero() {
   return (
@@ -24,6 +25,7 @@ export default function Hero() {
             </p>
           </div>
 
+          <TrustedBy />
           <HeroBenefits />
         </div>
       </div>

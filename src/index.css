@@ -5,12 +5,3 @@
 body {
   background-color: theme('colors.brand.dark');
 }
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
