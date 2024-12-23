@@ -2,32 +2,28 @@ import React from 'react';
 import { handleNavClick } from '../../utils/scrollUtils';
 
 export default function NavLinks() {
-  const isPrivacyPage = window.location.pathname === '/privacy';
-
-  const handleClick = (label: string) => {
-    if (isPrivacyPage) {
-      window.location.href = '/#' + label.toLowerCase().replace(/\s+/g, '-');
-    } else {
-      handleNavClick(label);
-    }
-  };
-
   return (
-    <div className="hidden md:flex justify-end space-x-12">
+    <div className="hidden md:flex items-center justify-end space-x-8">
       <button 
-        onClick={() => handleClick('Solutions')}
+        onClick={() => handleNavClick('Solutions')}
         className="text-brand-light hover:text-white transition-colors"
       >
         Solutions
       </button>
       <button 
-        onClick={() => handleClick('How It Works')}
+        onClick={() => handleNavClick('How It Works')}
         className="text-brand-light hover:text-white transition-colors"
       >
         How It Works
       </button>
       <button 
-        onClick={() => handleClick('About Us')}
+        onClick={() => handleNavClick('Pricing')}
+        className="text-brand-light hover:text-white transition-colors"
+      >
+        Pricing
+      </button>
+      <button 
+        onClick={() => handleNavClick('About Us')}
         className="text-brand-light hover:text-white transition-colors"
       >
         Our Team

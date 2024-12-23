@@ -1,27 +1,23 @@
-import React, { useState } from 'react';
-import OpeningAnimation from './components/OpeningAnimation/OpeningAnimation';
+import React from 'react';
 import PageContent from './components/PageContent';
+import SignupPage from './components/Signup/SignupPage';
+import ConsultationConfirmation from './components/Consultation/ConsultationConfirmation';
 import Privacy from './components/Privacy/Privacy';
 import Terms from './components/Terms/Terms';
 
 export default function App() {
-  const [showAnimation, setShowAnimation] = useState(true);
   const path = window.location.pathname;
-  const isPrivacyPage = path === '/privacy';
-  const isTermsPage = path === '/terms';
-
-  return (
-    <>
-      {showAnimation && !isPrivacyPage && !isTermsPage && (
-        <OpeningAnimation onComplete={() => setShowAnimation(false)} />
-      )}
-      {isPrivacyPage ? (
-        <Privacy />
-      ) : isTermsPage ? (
-        <Terms />
-      ) : (
-        <PageContent isVisible={!showAnimation} />
-      )}
-    </>
-  );
+  
+  switch (path) {
+    case '/signup':
+      return <SignupPage />;
+    case '/consultation-confirmation':
+      return <ConsultationConfirmation />;
+    case '/privacy':
+      return <Privacy />;
+    case '/terms':
+      return <Terms />;
+    default:
+      return <PageContent />;
+  }
 }

@@ -4,8 +4,8 @@ import { industries } from './industries';
 export default function AnimatedIndustry() {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const typingSpeed = 50;
-  const pauseDuration = 1000;
+  const typingSpeed = 35; // Increased from 25ms to 35ms
+  const pauseDuration = 1000; // Increased from 800ms to 1000ms
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;

@@ -5,12 +5,12 @@ const benefits = [
   {
     icon: Clock,
     title: 'Save 40+ Hours/Week',
-    description: 'Never miss a call or waste time on repetitive phone tasks'
+    description: '100% call coverage with instant AI response'
   },
   {
     icon: DollarSign,
-    title: 'Cut Costs by 60%',
-    description: 'Reduce overhead while maintaining 24/7 professional support'
+    title: 'Risk-Free Start',
+    description: '100% satisfaction guarantee or money back'
   },
   {
     icon: LineChart,

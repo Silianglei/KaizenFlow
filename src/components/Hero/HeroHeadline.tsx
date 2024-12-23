@@ -8,9 +8,9 @@ export default function HeroHeadline() {
         <span className="text-brand-primary">Neither Should Your Phone.</span>
       </h1>
       
-      <p className="max-w-2xl mx-auto text-xl text-brand-light">
-        Get a custom AI phone system that handles all your calls 24/7,
-        <br className="hidden md:block" /> so you can focus on growing your business.
+      <p className="max-w-3xl mx-auto text-xl text-brand-light">
+        Transform your business with an AI phone system that delivers 100% call coverage, 
+        99% resolution rate, and 24/7 availability - or your money back.
       </p>
     </div>
   );

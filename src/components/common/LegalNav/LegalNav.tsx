@@ -15,7 +15,7 @@ export default function LegalNav() {
               <CircuitBoard className="h-8 w-8 text-brand-primary" />
             </div>
             <span className="text-xl font-bold text-white group-hover:text-brand-primary transition-colors">
-              KaizenFlow
+              Kaizen Flow
             </span>
           </a>
 
@@ -34,9 +34,7 @@ export default function LegalNav() {
               Terms of Service
             </a>
             <a 
-              href="https://fg8dqkk77s6.typeform.com/kaizenflow"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/signup"
               className="px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-lg text-brand-primary hover:bg-brand-primary/20 transition-colors"
             >
               Get Started
