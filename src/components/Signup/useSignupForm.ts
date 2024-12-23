@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FormData, FormErrors } from './types';
 import { validateEmail, validatePhoneNumber, validateUrl } from '../../utils/validation';
-import { sendWebhook } from '../../utils/webhooks';
+import { sendWebhook, WEBHOOKS } from '../../utils/webhooks';
 
 export function useSignupForm() {
   const [formData, setFormData] = useState<FormData>({
@@ -13,7 +13,7 @@ export function useSignupForm() {
     companyUrl: ''
   });
 
-  const [errors, setErrors] = useState<FormErrors>({});
+  const [errors, setErrors] = useState<FormErrors & { submit?: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validateForm = (): boolean => {
@@ -58,41 +58,32 @@ export function useSignupForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validateForm()) {
-      setIsSubmitting(true);
-      try {
-        // Send webhook
-        await sendWebhook({
-          type: 'consultation_request',
-          timestamp: new Date().toISOString(),
-          data: {
-            firstName: formData.firstName,
-            lastName: formData.lastName,
-            email: formData.email,
-            phoneNumber: formData.phoneNumber,
-            companyName: formData.companyName,
-            companyUrl: formData.companyUrl
-          }
-        });
+    if (!validateForm()) return;
 
-        // Store form data in sessionStorage
-        sessionStorage.setItem('formData', JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          email: formData.email
-        }));
-        
-        // Redirect to confirmation page
-        window.location.href = '/consultation-confirmation';
-      } catch (error) {
-        console.error('Error submitting form:', error);
-        setErrors(prev => ({
-          ...prev,
-          submit: 'Failed to submit form. Please try again.'
-        }));
-      } finally {
-        setIsSubmitting(false);
-      }
+    setIsSubmitting(true);
+    try {
+      await sendWebhook(WEBHOOKS.CONSULTATION, {
+        type: 'consultation_request',
+        timestamp: new Date().toISOString(),
+        data: formData
+      });
+
+      // Store form data in sessionStorage
+      sessionStorage.setItem('formData', JSON.stringify({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email
+      }));
+      
+      // Redirect to confirmation page
+      window.location.href = '/consultation-confirmation';
+    } catch (error) {
+      setErrors(prev => ({
+        ...prev,
+        submit: 'Unable to submit form. Please try again or contact support.'
+      }));
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
