@@ -13,6 +13,16 @@ export default function SignInPage() {
               <SignInContent />
             </div>
             <div className="w-full lg:w-1/2 p-8 lg:p-12">
+              <div className="lg:hidden mb-8">
+                <div className="flex items-center justify-center gap-3">
+                  <img 
+                    src="/logo.svg" 
+                    alt="Kaizen Flow Logo" 
+                    className="h-20 w-20"
+                  />
+                  <span className="text-3xl font-bold text-white">Kaizen Flow</span>
+                </div>
+              </div>
               <SignInForm />
             </div>
           </div>

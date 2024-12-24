@@ -1,34 +1,34 @@
-import { PhoneCall, Workflow, Globe, Lock, Cog, LineChart } from 'lucide-react';
+import { PhoneIncoming, PhoneOutgoing, Building2, CalendarCheck, Users, BrainCircuit } from 'lucide-react';
 
 export const solutions = [
   {
-    icon: PhoneCall,
-    title: 'Intelligent Call Handling',
-    description: 'AI agents handle customer calls 24/7, providing natural conversations and instant resolutions for common inquiries and support requests.'
+    icon: PhoneIncoming,
+    title: 'Medical Reception',
+    description: 'AI receptionists handle patient calls 24/7, schedule appointments, answer FAQs, and route urgent calls to staff. Perfect for medical clinics and healthcare practices.'
   },
   {
-    icon: Workflow,
-    title: 'CRM Integration',
-    description: 'Seamlessly connect with your existing systems for automatic call routing, appointment scheduling, and payment processing.'
+    icon: CalendarCheck,
+    title: 'Restaurant Reservations',
+    description: 'Automated reservation management that handles booking inquiries, confirms tables, and manages waitlists - all while maintaining the perfect hospitality tone.'
   },
   {
-    icon: Globe,
-    title: 'Multilingual Support',
-    description: 'AI agents communicate fluently in multiple languages, helping you serve a diverse customer base without additional staffing.'
+    icon: PhoneOutgoing,
+    title: 'Sales Outreach',
+    description: 'Proactive lead engagement at scale. Our AI agents qualify prospects, set appointments, and nurture leads through natural phone conversations.'
   },
   {
-    icon: Lock,
-    title: 'Enterprise-Grade Security',
-    description: 'Advanced call encryption and secure conversation handling ensures all customer interactions and business data remain private and protected.'
+    icon: Building2,
+    title: 'Property Management',
+    description: 'Handle maintenance requests, schedule viewings, and manage tenant inquiries around the clock while ensuring every call is answered promptly.'
   },
   {
-    icon: Cog,
-    title: 'Custom Configuration',
-    description: 'Tailor your phone system with unlimited customization options, from call flows to response scripts and integration points.'
+    icon: Users,
+    title: 'Customer Support',
+    description: 'Provide instant resolution for common support queries, process returns, and escalate complex issues to the right team members automatically.'
   },
   {
-    icon: LineChart,
-    title: 'Analytics Dashboard',
-    description: 'Real-time insights into call volumes, resolution rates, and customer satisfaction metrics through an intuitive analytics panel.'
+    icon: BrainCircuit,
+    title: 'Lead Qualification',
+    description: 'AI agents engage with inbound leads instantly, qualify their interest, and schedule follow-ups with sales teams for qualified opportunities.'
   }
 ];

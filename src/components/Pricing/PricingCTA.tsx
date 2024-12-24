@@ -5,7 +5,7 @@ export default function PricingCTA() {
   return (
     <div className="md:col-span-2 mt-12 text-center">
       <a 
-        href="/signup"
+        href="/chat"
         className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-brand-primary to-brand-secondary p-0.5 transition-all hover:scale-[1.02]"
       >
         <div className="relative flex items-center gap-4 rounded-[6px] bg-brand-dark px-8 py-4 transition-all group-hover:bg-opacity-0">

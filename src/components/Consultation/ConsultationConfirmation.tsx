@@ -16,10 +16,10 @@ export default function ConsultationConfirmation() {
       calendlyUrl.searchParams.set('email', formData.email);
     }
 
-    // Open Calendly in a new tab after a short delay
+    // Open Calendly immediately with a minimal delay for UI feedback
     const timer = setTimeout(() => {
       window.open(calendlyUrl.toString(), '_blank');
-    }, 1500);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [formData]);
@@ -40,7 +40,7 @@ export default function ConsultationConfirmation() {
             
             <p className="text-xl text-brand-light mb-8">
               Our calendar is opening in a new tab where you can schedule 
-              your free 45-minute consultation at your preferred time.
+              your free 30-minute consultation at your preferred time.
             </p>
 
             <div className="flex flex-col items-center gap-6">

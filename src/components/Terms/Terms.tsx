@@ -2,6 +2,7 @@ import React from 'react';
 import LegalNav from '../common/LegalNav/LegalNav';
 import SectionBackground from '../common/SectionBackground';
 import TermsContent from './TermsContent';
+import Footer from '../Footer/Footer';
 
 export default function Terms() {
   return (
@@ -12,6 +13,7 @@ export default function Terms() {
           <TermsContent />
         </div>
       </SectionBackground>
+      <Footer />
     </div>
   );
 }

@@ -19,13 +19,14 @@ export default function TeamFounder() {
         <div className="order-1 lg:order-2">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent z-10" />
+            <div className="relative aspect-[3/2] overflow-hidden rounded-xl">
               <img 
-                src={profileImage} 
+                src={profileImage}
                 alt="Brandon Lei, Founder of KaizenFlow"
-                className="w-full rounded-xl shadow-lg"
+                className="w-full h-full object-cover"
+                loading="lazy"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent" />
             </div>
           </div>
         </div>

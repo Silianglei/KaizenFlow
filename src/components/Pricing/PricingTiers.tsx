@@ -28,12 +28,12 @@ export default function PricingTiers() {
         <div className="p-8">
           <h3 className="text-2xl font-bold text-white mb-2">Initial Build</h3>
           <div className="flex items-baseline gap-2 mb-2">
-            <span className="text-4xl font-bold text-brand-primary">$999-2,499</span>
+            <span className="text-4xl font-bold text-brand-primary">Custom</span>
             <span className="text-brand-light">one-time</span>
           </div>
           <p className="text-sm text-brand-primary mb-2">100% Money-Back Guarantee</p>
           <p className="text-sm text-brand-light mb-6">
-            Price varies based on complexity and integrations
+            Tailored pricing based on your specific needs and scale
           </p>
           
           <p className="text-brand-light mb-8">
@@ -78,7 +78,6 @@ export default function PricingTiers() {
         </div>
       </div>
 
-      {/* Enhanced CTA Section */}
       <PricingCTA />
     </div>
   );

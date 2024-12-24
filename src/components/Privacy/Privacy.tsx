@@ -2,6 +2,7 @@ import React from 'react';
 import LegalNav from '../common/LegalNav/LegalNav';
 import SectionBackground from '../common/SectionBackground';
 import PrivacyContent from './PrivacyContent';
+import Footer from '../Footer/Footer';
 
 export default function Privacy() {
   return (
@@ -12,6 +13,7 @@ export default function Privacy() {
           <PrivacyContent />
         </div>
       </SectionBackground>
+      <Footer />
     </div>
   );
 }

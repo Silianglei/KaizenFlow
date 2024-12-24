@@ -15,7 +15,7 @@ export default function PrivacyContent() {
 
         <ul className="list-disc pl-6 mb-8 text-brand-light">
           <li>Visit our website at https://www.gokaizenflow.com, or any website of ours that links to this Privacy Notice</li>
-          <li>Use Kaizen Flow. We provide custom AI-driven chatbots and voice assistants for property management firms, enabling them to handle tenant inquiries, maintenance requests, and related communications efficiently. Our services involve integrating with existing property data and customer information to deliver instant 24/7 support. Throughout this process, we prioritize the privacy and security of all personal and business-related data.</li>
+          <li>Use Kaizen Flow. We provide custom AI-powered phone systems that handle inbound and outbound calls for businesses. Our intelligent voice AI agents manage customer inquiries, appointments, lead qualification, and support requests 24/7. Our services integrate with your existing business systems to deliver seamless, automated phone support while maintaining the highest standards of data privacy and security.</li>
           <li>Engage with us in other related ways, including any sales, marketing, or events</li>
         </ul>
 

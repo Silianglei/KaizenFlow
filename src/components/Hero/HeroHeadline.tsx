@@ -4,13 +4,14 @@ export default function HeroHeadline() {
   return (
     <div className="mb-12">
       <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-        Your Business Never Sleeps.<br />
-        <span className="text-brand-primary">Neither Should Your Phone.</span>
+        Transform Your Business with
+        <span className="text-brand-primary block mt-2">Intelligent Voice AI</span>
       </h1>
       
       <p className="max-w-3xl mx-auto text-xl text-brand-light">
-        Transform your business with an AI phone system that delivers 100% call coverage, 
-        99% resolution rate, and 24/7 availability - or your money back.
+        Automate both inbound and outbound calls with AI agents that sound natural, 
+        understand context, and deliver results. From customer service to lead generation, 
+        our Voice AI handles it all with 99% accuracy.
       </p>
     </div>
   );

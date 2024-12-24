@@ -1,15 +1,12 @@
 import React from 'react';
-import { CircuitBoard } from 'lucide-react';
+import Logo from '../common/Logo/Logo';
 
 export default function FooterCopyright() {
   return (
-    <div className="flex items-center gap-3">
-      <CircuitBoard className="h-8 w-8 text-brand-primary" />
-      <div>
-        <div className="text-white font-bold">Kaizen Flow</div>
-        <div className="text-sm text-brand-light">
-          © {new Date().getFullYear()} All rights reserved
-        </div>
+    <div className="flex flex-col items-start">
+      <Logo className="scale-90 origin-left" />
+      <div className="text-sm text-brand-light/70 mt-3">
+        © {new Date().getFullYear()} Kaizen Flow. All rights reserved.
       </div>
     </div>
   );

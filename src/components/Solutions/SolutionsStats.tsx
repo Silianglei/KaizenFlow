@@ -1,9 +1,9 @@
 import React from 'react';
 
 const stats = [
-  { value: '99%', label: 'Call Resolution Rate' },
+  { value: '95%', label: 'Call Resolution Rate' },
   { value: '24/7', label: 'Availability' },
-  { value: '100%', label: 'Call Answer Rate' },
+  { value: '60%', label: 'Cost Reduction' },
 ];
 
 export default function SolutionsStats() {

@@ -1,8 +1,8 @@
 const sectionMap: Record<string, string> = {
-  'About Us': 'meet-our-team',
   'Solutions': 'ai-powered-phone-support',
   'How It Works': 'simple-onboarding-process',
-  'Pricing': 'pricing'
+  'Pricing': 'pricing',
+  'Team': 'meet-our-team'
 };
 
 export const scrollToSection = (elementId: string) => {

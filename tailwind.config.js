@@ -12,6 +12,9 @@ export default {
           light: '#6B6E70',
         }
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },

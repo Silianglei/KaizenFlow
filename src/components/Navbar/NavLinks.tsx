@@ -23,11 +23,17 @@ export default function NavLinks() {
         Pricing
       </button>
       <button 
-        onClick={() => handleNavClick('About Us')}
+        onClick={() => handleNavClick('Team')}
         className="text-brand-light hover:text-white transition-colors"
       >
-        Our Team
+        Team
       </button>
+      <a 
+        href="/chat"
+        className="px-4 py-2 bg-brand-primary/10 border border-brand-primary/20 rounded-lg text-brand-primary hover:bg-brand-primary/20 transition-colors"
+      >
+        Book Free Call
+      </a>
     </div>
   );
 }

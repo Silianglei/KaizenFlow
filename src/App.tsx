@@ -9,7 +9,7 @@ export default function App() {
   const path = window.location.pathname;
   
   switch (path) {
-    case '/signup':
+    case '/chat':
       return <SignupPage />;
     case '/consultation-confirmation':
       return <ConsultationConfirmation />;

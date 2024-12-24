@@ -7,15 +7,15 @@ export default function SignupForm() {
   const { formData, errors, isSubmitting, handleChange, handleSubmit } = useSignupForm();
 
   return (
-    <div className="bg-brand-gray/5 border border-brand-gray/10 rounded-2xl p-8 backdrop-blur-sm">
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white">Book Your Free Design Call</h2>
+    <div className="bg-brand-gray/5 border border-brand-gray/10 rounded-2xl p-6 lg:p-8 backdrop-blur-sm">
+      <div className="mb-6 lg:mb-8">
+        <h2 className="text-xl lg:text-2xl font-bold text-white">Book Your Free 20-Min Call</h2>
         <p className="text-brand-light mt-2">
-          Let's discuss your custom AI phone system
+          Let's explore how Voice AI can transform your business
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-5">
         <div className="grid grid-cols-2 gap-4">
           <FormInput
             label="First Name"
@@ -86,13 +86,13 @@ export default function SignupForm() {
             disabled={isSubmitting}
             className="w-full py-3 px-4 bg-gradient-to-r from-brand-primary to-brand-secondary text-brand-dark font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? 'Scheduling...' : 'Schedule Free 45-Min Consultation'}
+            {isSubmitting ? 'Scheduling...' : 'Schedule Call'}
             <ArrowRight className="w-5 h-5" />
           </button>
 
           <div className="text-center">
-            <p className="text-brand-primary font-medium">
-              Trusted by 100+ Businesses
+            <p className="text-sm text-brand-light">
+              No obligation • Free consultation
             </p>
           </div>
         </div>

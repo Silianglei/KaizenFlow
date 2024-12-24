@@ -1,21 +1,21 @@
 import React from 'react';
-import { Clock, DollarSign, LineChart } from 'lucide-react';
+import { PhoneIncoming, PhoneOutgoing, Brain } from 'lucide-react';
 
 const benefits = [
   {
-    icon: Clock,
-    title: 'Save 40+ Hours/Week',
-    description: '100% call coverage with instant AI response'
+    icon: PhoneIncoming,
+    title: 'Smart Inbound Handling',
+    description: '24/7 call answering with instant response and perfect routing'
   },
   {
-    icon: DollarSign,
-    title: 'Risk-Free Start',
-    description: '100% satisfaction guarantee or money back'
+    icon: PhoneOutgoing,
+    title: 'Automated Outreach',
+    description: 'Proactive lead engagement and appointment setting at scale'
   },
   {
-    icon: LineChart,
-    title: 'Scale Instantly',
-    description: 'Handle unlimited concurrent calls without hiring'
+    icon: Brain,
+    title: 'Contextual Intelligence',
+    description: 'Natural conversations that understand and adapt in real-time'
   }
 ];
 
