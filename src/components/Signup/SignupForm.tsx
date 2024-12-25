@@ -84,7 +84,7 @@ export default function SignupForm() {
           </button>
 
           <p className="text-center text-sm text-brand-light/70 mt-4">
-            20-minute consultation • Pay only when it's live
+            30-minute consultation • Pay only when it's live
           </p>
         </div>
       </form>
