@@ -7,15 +7,8 @@ export default function SignupForm() {
   const { formData, errors, isSubmitting, handleChange, handleSubmit } = useSignupForm();
 
   return (
-    <div className="bg-brand-gray/5 border border-brand-gray/10 rounded-2xl p-6 lg:p-8 backdrop-blur-sm">
-      <div className="mb-6 lg:mb-8">
-        <h2 className="text-xl lg:text-2xl font-bold text-white">Book Your Free 20-Min Call</h2>
-        <p className="text-brand-light mt-2">
-          Let's explore how Voice AI can transform your business
-        </p>
-      </div>
-
-      <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-5">
+    <div className="bg-brand-gray/5 border border-brand-gray/10 rounded-xl p-8 backdrop-blur-sm">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-2 gap-4">
           <FormInput
             label="First Name"
@@ -37,7 +30,7 @@ export default function SignupForm() {
         </div>
 
         <FormInput
-          label="Email"
+          label="Work Email"
           name="email"
           type="email"
           value={formData.email}
@@ -47,7 +40,7 @@ export default function SignupForm() {
         />
 
         <FormInput
-          label="Phone Number"
+          label="Phone"
           name="phoneNumber"
           type="tel"
           value={formData.phoneNumber}
@@ -57,7 +50,7 @@ export default function SignupForm() {
         />
 
         <FormInput
-          label="Company Name"
+          label="Company"
           name="companyName"
           value={formData.companyName}
           onChange={handleChange}
@@ -72,7 +65,7 @@ export default function SignupForm() {
           value={formData.companyUrl}
           onChange={handleChange}
           error={errors.companyUrl}
-          placeholder="https://company.com"
+          placeholder="https://"
           required
         />
 
@@ -80,21 +73,19 @@ export default function SignupForm() {
           <p className="text-red-400 text-sm">{errors.submit}</p>
         )}
 
-        <div className="space-y-4 pt-4">
+        <div className="pt-2">
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 px-4 bg-gradient-to-r from-brand-primary to-brand-secondary text-brand-dark font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-3.5 bg-gradient-to-r from-brand-primary to-brand-secondary text-brand-dark font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? 'Scheduling...' : 'Schedule Call'}
+            {isSubmitting ? 'Scheduling...' : 'Schedule Your Free Build'}
             <ArrowRight className="w-5 h-5" />
           </button>
 
-          <div className="text-center">
-            <p className="text-sm text-brand-light">
-              No obligation • Free consultation
-            </p>
-          </div>
+          <p className="text-center text-sm text-brand-light/70 mt-4">
+            20-minute consultation • Pay only when it's live
+          </p>
         </div>
       </form>
     </div>

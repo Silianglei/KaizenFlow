@@ -15,7 +15,7 @@ export default function TrustedBy() {
       
       <p className="mt-4 text-brand-light max-w-2xl mx-auto">
         By 2025, 75% of businesses will use AI for customer interactions. 
-        Early adopters who embrace Voice AI today will gain a significant competitive advantage.
+        Get your free custom AI phone system today and lead your industry.
       </p>
     </div>
   );

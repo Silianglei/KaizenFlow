@@ -1,7 +1,6 @@
 const sectionMap: Record<string, string> = {
   'Solutions': 'ai-powered-phone-support',
   'How It Works': 'simple-onboarding-process',
-  'Pricing': 'pricing',
   'Team': 'meet-our-team'
 };
 

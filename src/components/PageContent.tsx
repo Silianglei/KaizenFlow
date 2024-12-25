@@ -3,7 +3,6 @@ import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
 import Solutions from './Solutions/Solutions';
 import Onboarding from './Onboarding/Onboarding';
-import Pricing from './Pricing/Pricing';
 import Team from './Team/Team';
 import FAQ from './FAQ/FAQ';
 import CTA from './CTA/CTA';
@@ -16,7 +15,6 @@ export default function PageContent() {
       <Hero />
       <Solutions />
       <Onboarding />
-      <Pricing />
       <Team />
       <FAQ />
       <CTA />

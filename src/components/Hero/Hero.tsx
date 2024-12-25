@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-primary/10 border border-brand-primary/20 mb-8">
-            <span className="text-brand-primary font-medium">CUSTOM-BUILT AI PHONE SYSTEM IN 48 HOURS</span>
+            <span className="text-brand-primary font-medium">FREE BUILD • PAY MONTHLY</span>
           </div>
           
           <HeroHeadline />

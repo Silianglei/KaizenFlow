@@ -17,12 +17,6 @@ export default function NavLinks() {
         How It Works
       </button>
       <button 
-        onClick={() => handleNavClick('Pricing')}
-        className="text-brand-light hover:text-white transition-colors"
-      >
-        Pricing
-      </button>
-      <button 
         onClick={() => handleNavClick('Team')}
         className="text-brand-light hover:text-white transition-colors"
       >

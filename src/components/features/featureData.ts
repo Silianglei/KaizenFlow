@@ -8,8 +8,8 @@ export const features = [
   },
   {
     icon: Shield,
-    title: "99% Success Rate",
-    description: "Guaranteed call resolution success rate or get your money back."
+    title: "High Success Rate",
+    description: "Consistently high call resolution rate backed by our satisfaction guarantee."
   },
   {
     icon: Workflow,

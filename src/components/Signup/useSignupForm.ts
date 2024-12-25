@@ -13,7 +13,7 @@ export function useSignupForm() {
     companyUrl: ''
   });
 
-  const [errors, setErrors] = useState<FormErrors & { submit?: string }>({});
+  const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validateForm = (): boolean => {
@@ -62,13 +62,14 @@ export function useSignupForm() {
 
     setIsSubmitting(true);
     try {
+      // Send data to webhook
       await sendWebhook(WEBHOOKS.CONSULTATION, {
         type: 'consultation_request',
         timestamp: new Date().toISOString(),
         data: formData
       });
 
-      // Store form data in sessionStorage
+      // Store form data for confirmation page
       sessionStorage.setItem('formData', JSON.stringify({
         firstName: formData.firstName,
         lastName: formData.lastName,
@@ -80,7 +81,7 @@ export function useSignupForm() {
     } catch (error) {
       setErrors(prev => ({
         ...prev,
-        submit: 'Unable to submit form. Please try again or contact support.'
+        submit: 'Unable to schedule consultation. Please try again or contact support.'
       }));
     } finally {
       setIsSubmitting(false);

@@ -34,13 +34,13 @@ export default function ConsultationConfirmation() {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              We Look Forward to<br />
-              <span className="text-brand-primary">Meeting You</span>
+              Almost There!<br />
+              <span className="text-brand-primary">Choose Your Free 30-Min Slot</span>
             </h1>
             
             <p className="text-xl text-brand-light mb-8">
-              Our calendar is opening in a new tab where you can schedule 
-              your free 30-minute consultation at your preferred time.
+              You should be redirected to schedule your consultation. If not, 
+              click below to choose a time that works best for you.
             </p>
 
             <div className="flex flex-col items-center gap-6">

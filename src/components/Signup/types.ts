@@ -14,4 +14,5 @@ export interface FormErrors {
   phoneNumber?: string;
   companyName?: string;
   companyUrl?: string;
+  submit?: string;
 }
